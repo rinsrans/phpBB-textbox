@@ -1,0 +1,8 @@
+services:
+    tas2580.paypal.listener:
+        class: rinsrans\textbox\event\listener
+        arguments:
+            - @config
+            - @template
+        tags:
+            - { name: event.listener }

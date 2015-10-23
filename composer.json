@@ -1,0 +1,26 @@
+{
+	"name": "rinsrans/textbox",
+	"type": "phpbb-extension",
+	"description": "Displays a text box with a custom message in the header",
+	"homepage": "https://github.com/rinsrans/phpBB-textbox",
+	"version": "0.1.0",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "rinsrans",
+			"email": "karl.rinser@gmail.com",
+			"homepage": "http://rinsrans.ml/",
+			"role": "Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Textbox",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.4,<3.2.*@dev"
+		}
+	}
+}
