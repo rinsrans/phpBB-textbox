@@ -35,6 +35,6 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_TEXTBOX_CONTENT'				=> 'Textbox Content',
-	'ACP_ACP_TEXTBOX_CONTENT_EXPLAIN'	=> 'Content that should be displayed in the forums header',
+	'ACP_ACP_TEXTBOX_CONTENT_EXPLAIN'	=> 'Content that should be displayed in the forums header. You can use BBCode.',
 	'ACP_TEXTBOX_SAVED'					=> 'The settings have been changed',
 ));

@@ -27,14 +27,22 @@ class textbox_module
 				trigger_error($user->lang('FORM_INVALID') . adm_back_link($this->u_action), E_USER_WARNING);
 			}
 			// Set the new settings to config
-			$config->set('textbox_content', $request->variable('textbox_content', '', true));
-
+			$uid = $bitfield = $options = '';
+			$textbox_content = $request->variable('textbox_content', '', true);
+			generate_text_for_storage($textbox_content, $uid, $bitfield, $options, true, true, true);
+			$config->set('textbox_content', $textbox_content);
+			$config->set('textbox_bbcode_uid', $uid);
+			$config->set('textbox_bbcode_bitfield', $bitfield);
+					
 			trigger_error($user->lang('ACP_TEXTBOX_SAVED') . adm_back_link($this->u_action));
 		}
+
+		$textbox_content = generate_text_for_edit($config['textbox_content'], $config['textbox_bbcode_uid'], 3);
+
 		// Send the curent settings to template
 		$template->assign_vars(array(
 			'U_ACTION'			=> $this->u_action,
-			'TEXTBOX_CONTENT'	=> $config['textbox_content'],
+			'TEXTBOX_CONTENT'	=> $textbox_content['text'],
 		));
 	}
 }

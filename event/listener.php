@@ -47,7 +47,7 @@ class listener implements EventSubscriberInterface
 	public function page_header($event)
 	{
 		$this->template->assign_vars(array(
-			'TEXTBOX_CONTENT'	=> $this->config['textbox_content'],
+			'TEXTBOX_CONTENT'	=> generate_text_for_display($this->config['textbox_content'], $this->config['textbox_bbcode_uid'], $this->config['textbox_bitfield'], 3, true),
 		));
 	}
 }

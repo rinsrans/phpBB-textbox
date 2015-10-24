@@ -35,6 +35,6 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_TEXTBOX_CONTENT'				=> 'Textbox Inhalt',
-	'ACP_ACP_TEXTBOX_CONTENT_EXPLAIN'	=> 'Text der in der Textbox angezeigt werden soll.',
+	'ACP_ACP_TEXTBOX_CONTENT_EXPLAIN'	=> 'Text der in der Textbox angezeigt werden soll.<br />Du kannst BBCode verwenden.',
 	'ACP_TEXTBOX_SAVED'					=> 'Die Einstellungen wurden gespeichert',
 ));

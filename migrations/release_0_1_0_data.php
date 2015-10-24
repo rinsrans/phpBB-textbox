@@ -20,6 +20,8 @@ class release_0_1_0_data extends \phpbb\db\migration\migration
 		return array(
 			// Add configs
 			array('config.add', array('textbox_content', '')),
+			array('config.add', array('textbox_bbcode_uid', '')),
+			array('config.add', array('textbox_bbcode_bitfield', '')),
 
 			// Add ACP module
 			array('module.add', array(
