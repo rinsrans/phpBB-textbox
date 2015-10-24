@@ -33,7 +33,7 @@ class textbox_module
 			$config->set('textbox_content', $textbox_content);
 			$config->set('textbox_bbcode_uid', $uid);
 			$config->set('textbox_bbcode_bitfield', $bitfield);
-					
+
 			trigger_error($user->lang('ACP_TEXTBOX_SAVED') . adm_back_link($this->u_action));
 		}
 
