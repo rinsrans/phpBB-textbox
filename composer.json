@@ -3,6 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Displays a text box with a custom message in the header",
 	"homepage": "https://github.com/rinsrans/phpBB-textbox",
+        "keywords": ["phpbb", "extension", "text", "info", "header"],
 	"version": "0.1.0",
 	"license": "GPL-2.0",
 	"authors": [{
