@@ -13,7 +13,7 @@ Licence
 
 <br /><br />
 <a href="https://phpbb-extensions.ga/extensions/rinsrans/phpBB-textbox.html">
-    <img src="http://phpbb-extensions.ga/rinsrans/phpBB-textbox.png" alt="rating" />
+    <img src="http://phpbb-extensions.cf/rinsrans/phpBB-textbox.png" alt="rating" />
 </a>
 <br /><br />
 [![Build Status](https://travis-ci.org/rinsrans/phpBB-textbox.svg)](https://travis-ci.org/rinsrans/phpBB-textbox)
